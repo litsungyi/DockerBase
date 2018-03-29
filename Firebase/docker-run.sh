@@ -1,0 +1,1 @@
+docker run -it --rm --name firebase-host -p 29000:80 -v /$PWD/app:/usr/src/app -w /usr/src/app firebase-base

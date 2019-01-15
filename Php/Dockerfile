@@ -1,8 +1,5 @@
-FROM php:7
+FROM php:7-apache
 
-WORKDIR /usr/src/public_html
-
+#COPY conf.d /usr/local/etc/php/conf.d
 
 EXPOSE 80
-
-CMD ["bash"]

@@ -1,8 +1,7 @@
-FROM node:6
+FROM node:10
 
 WORKDIR /usr/src/app
 
-COPY ./app/ .
 EXPOSE 80
 
 CMD ["node", "main"]

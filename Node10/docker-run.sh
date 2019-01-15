@@ -1,6 +1,6 @@
 docker run -it --rm \
-    --name golang-host \
-    -p 20000:80 \
+    --name node-host-10 \
+    -p 23000:80 \
     -v "$PWD"/app:/usr/src/app \
     -w /usr/src/app \
-    golang-base
+    node-base-10

@@ -1,8 +1,7 @@
-FROM golang:1.8
+FROM golang:1
 
 WORKDIR /usr/src/app
 
-COPY ./app/ .
 EXPOSE 80
 
 CMD ["go", "run", "main.go"]

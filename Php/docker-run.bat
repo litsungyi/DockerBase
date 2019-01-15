@@ -1,1 +1,0 @@
-docker run -it --rm --name php-host -p 25000:80 -v /$PWD/app:/usr/src/app -w /usr/src/app php-base /bin/bash

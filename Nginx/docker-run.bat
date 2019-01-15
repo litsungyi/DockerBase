@@ -1,1 +1,0 @@
-docker run -it --rm --name nginx-host -p 22000:80 -v /$PWD:/usr/src/app -w /usr/src/app nginx-base /bin/bash

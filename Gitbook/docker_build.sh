@@ -1,1 +1,1 @@
-docker build . -t gitbook
+docker build -t gitbook-base .

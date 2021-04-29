@@ -1,7 +1,9 @@
-FROM node:8
+FROM node:10
+
+RUN npm install -g @google/clasp
 
 WORKDIR /usr/src/app
 
 EXPOSE 80
 
-ENTRYPOINT [ "sh", "-c", "echo $HOME" ]
+CMD [ "sh" ]

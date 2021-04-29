@@ -3,4 +3,4 @@ docker run -it --rm \
     -p 24000:80 \
     -v "$PWD"/app:/usr/src/app \
     -w /usr/src/app \
-    apps-script-base
+    apps-script-base $@

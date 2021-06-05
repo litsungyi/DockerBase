@@ -5,4 +5,4 @@ WORKDIR /usr/src/app
 
 EXPOSE 80
 
-CMD ["node", "main"]
+CMD ["npm", "run", "start"]

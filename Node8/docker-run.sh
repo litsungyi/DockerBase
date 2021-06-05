@@ -3,4 +3,5 @@ docker run -it --rm \
     -p 24000:80 \
     -v "$PWD"/app:/usr/src/app \
     -w /usr/src/app \
-    node-base-8
+    node-base-8 \
+    npm run start

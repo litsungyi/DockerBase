@@ -1,4 +1,6 @@
-x, y, z = [1, [2, 3]] # x = 1, y = [2, 3] z = nil
-puts "x = #{x}, y = #{y}, z = #{z}"
-x, (y, z) = [1, [2, 3]] # x = 1, y = 2, z = 3
-puts "x = #{x}, y = #{y}, z = #{z}"
+require 'dotenv/load'
+require "redis"
+
+redis = Redis.new(host: ENV['REDIS_IP'], port: ENV['REDIS_PORT'], db: 15)
+redis.set("mykey", "hello world")
+puts redis.get("mykey")

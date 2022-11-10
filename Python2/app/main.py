@@ -4,9 +4,9 @@ from BaseHTTPServer import BaseHTTPRequestHandler,HTTPServer
 PORT_NUMBER = 80
 
 #This class will handles any incoming request from
-#the browser 
+#the browser
 class myHandler(BaseHTTPRequestHandler):
-    
+
     #Handler for the GET requests
     def do_GET(self):
         self.send_response(200)
@@ -21,7 +21,7 @@ try:
     #incoming request
     server = HTTPServer(('', PORT_NUMBER), myHandler)
     print 'Started httpserver on port ' , PORT_NUMBER
-    
+
     #Wait forever for incoming htto requests
     server.serve_forever()
 

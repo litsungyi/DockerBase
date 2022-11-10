@@ -3,5 +3,5 @@ docker run -it --rm \
     -p 10000:80 \
     -v "$PWD"/app:/usr/src/app \
     -w /usr/src/app \
-    xxx-base
+    xxx-base "$@"
     # Command

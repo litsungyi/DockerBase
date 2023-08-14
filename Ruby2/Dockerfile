@@ -1,4 +1,4 @@
-FROM ruby:2
+FROM ruby:2-alpine
 
 VOLUME ["/usr/src/app"]
 WORKDIR /usr/src/app

@@ -4,4 +4,4 @@ docker run -it --rm \
     -v "$PWD"/app:/usr/src/app \
     -w /usr/src/app \
     elixir-base \
-    elixir main.exs
+    elixir lib/main.ex

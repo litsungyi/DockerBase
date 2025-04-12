@@ -1,6 +1,6 @@
 docker run -it --rm \
     --name cpp-host \
-    -p 10000:80 \
+    -p 21000:80 \
     -v "$PWD"/app:/usr/src/app \
     -w /usr/src/app \
     cpp-base \

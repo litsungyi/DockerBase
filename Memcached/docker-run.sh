@@ -1,6 +1,6 @@
 docker run -it --rm \
-    --name apps-script-host \
-    -p 20200:80 \
+    --name memcached-host \
+    -p 20400:6379 \
     -v "$PWD"/app:/usr/src/app \
     -w /usr/src/app \
-    apps-script-base $@
+    memcached-base

@@ -1,3 +1,3 @@
 #!/usr/bin/python
 
-int("x")
+print("Hello World")

@@ -1,1 +1,1 @@
-docker build -t python-base-3 .
+docker build -t python-base .

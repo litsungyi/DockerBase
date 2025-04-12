@@ -1,0 +1,7 @@
+# Rakefile
+desc 'Hello World'
+task :hello_world do
+  puts 'Hello World'
+end
+
+task default: [:hello_world]

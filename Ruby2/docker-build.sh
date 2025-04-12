@@ -1,1 +1,0 @@
-docker build -t ruby2-base .

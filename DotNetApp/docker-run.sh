@@ -1,3 +1,5 @@
+#! /bin/bash
+
 docker run -it --rm \
     --name dotnetapp-host \
     -p 21400:80 \

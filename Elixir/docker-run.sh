@@ -1,3 +1,5 @@
+#! /bin/bash
+
 docker run -it --rm \
     --name elixir-host \
     -p 22400:80 \

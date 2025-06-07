@@ -1,3 +1,5 @@
+#! /bin/bash
+
 docker run -it --rm \
     --name ruby-host \
     -p 22100:80 \

@@ -1,3 +1,5 @@
+#! /bin/bash
+
 docker run -it --rm \
     --name rlang-host \
     -p 23200:80 \

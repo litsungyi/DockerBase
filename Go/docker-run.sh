@@ -1,3 +1,5 @@
+#! /bin/bash
+
 docker run -it --rm \
     --name golang-host \
     -p 21200:80 \

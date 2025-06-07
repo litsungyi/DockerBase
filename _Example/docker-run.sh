@@ -1,3 +1,5 @@
+#! /bin/bash
+
 docker run -it --rm \
     --name xxx-host \
     -p 10000:80 \

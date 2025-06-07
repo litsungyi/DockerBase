@@ -1,1 +1,3 @@
-docker start nginx-base
+#! /bin/bash
+
+docker start nginx-host

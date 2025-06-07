@@ -1,3 +1,5 @@
+#! /bin/bash
+
 docker run -it --rm \
     --name gitbook-host \
     -p 20600:80 \

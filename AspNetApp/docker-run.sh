@@ -1,3 +1,5 @@
+#! /bin/bash
+
 docker run -it --rm \
     --name aspnetapp-host \
     -p 21300:80 \

@@ -1,3 +1,5 @@
+#! /bin/bash
+
 docker run -it --rm -d \
     --name php-host \
     -p 21500:80 \

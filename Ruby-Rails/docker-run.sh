@@ -1,3 +1,5 @@
+#! /bin/bash
+
 docker run -it --rm \
     --name rails-host \
     -p 22200:80 \

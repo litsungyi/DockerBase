@@ -1,3 +1,5 @@
+#! /bin/bash
+
 docker run -it --rm \
     --name redis-host \
     -p 20400:6379 \

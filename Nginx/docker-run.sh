@@ -1,3 +1,5 @@
+#! /bin/bash
+
 docker run -it --rm -d \
     --name nginx-host \
     -p 8088:80 \

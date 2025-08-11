@@ -1,3 +1,5 @@
+#! /bin/bash
+
 docker run -it --rm \
     --name cpp-host \
     -p 21000:80 \

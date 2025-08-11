@@ -1,2 +1,3 @@
-chmod +x **/docker-build.sh
-chmod +x **/docker-run.sh
+#! /bin/bash
+
+chmod u+x **/docker-*.sh

@@ -1,6 +1,6 @@
-FROM julia:latest
+FROM clojure:latest
 
 VOLUME ["/usr/src/app"]
 WORKDIR /usr/src/app
 
-CMD ["julia", "main.jl"]
+CMD ["lein", "run"]

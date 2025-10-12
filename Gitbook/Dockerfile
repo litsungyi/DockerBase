@@ -11,3 +11,4 @@ RUN sed -i.bak 's/confirm: true/confirm: false/g' \
     /root/.gitbook/versions/3.2.2/lib/output/website/copyPluginAssets.js
 
 CMD ["gitbook", "build", ".", "output"]
+ 

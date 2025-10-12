@@ -1,4 +1,4 @@
-FROM groovy:3.0
+FROM groovy:latest
 
 VOLUME ["/usr/src/app", "/home/groovy/.groovy/grapes"]
 WORKDIR /usr/src/app

@@ -1,8 +1,9 @@
-FROM node:10
+FROM node:lts-alpine3.21
 
 RUN npm install -g @google/clasp
 
-WORKDIR /usr/src/app
+VOLUME ["/var/app"]
+WORKDIR /var/app
 
 EXPOSE 80
 

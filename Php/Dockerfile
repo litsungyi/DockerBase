@@ -1,5 +1,8 @@
-FROM php:7-apache
+FROM php:latest
 
-#COPY conf.d /usr/local/etc/php/conf.d
+COPY public_html/ /var/www/html/
+
+VOLUME ["/var/www/html/"]
+WORKDIR /var/www/html/
 
 EXPOSE 80

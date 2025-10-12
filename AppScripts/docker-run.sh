@@ -3,6 +3,7 @@
 docker run -it --rm \
     --name apps-script-host \
     -p 20200:80 \
-    -v "$PWD"/app:/usr/src/app \
-    -w /usr/src/app \
-    apps-script-base $@
+    -v "$PWD"/app:/var/app \
+    -w /var/app \
+    apps-script-base \
+    $@

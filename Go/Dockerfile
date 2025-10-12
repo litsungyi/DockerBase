@@ -1,7 +1,6 @@
-FROM golang:1
+FROM golang:latest
 
+VOLUME ["/usr/src/app"]
 WORKDIR /usr/src/app
-
-EXPOSE 80
 
 CMD ["go", "run", "main.go"]

@@ -1,4 +1,5 @@
-FROM node:22-alpine
+FROM node:latest
+
 VOLUME ["/usr/src/app"]
 WORKDIR /usr/src/app
 

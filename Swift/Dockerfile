@@ -1,6 +1,6 @@
-FROM julia:latest
+FROM swift:latest
 
 VOLUME ["/usr/src/app"]
 WORKDIR /usr/src/app
 
-CMD ["julia", "main.jl"]
+CMD ["swift"]

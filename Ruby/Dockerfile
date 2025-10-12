@@ -1,4 +1,4 @@
-FROM ruby:3-alpine
+FROM ruby:latest
 
 VOLUME ["/tasks"]
 WORKDIR /tasks

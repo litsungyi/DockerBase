@@ -1,7 +1,4 @@
-FROM ubuntu:latest
-
-RUN apt-get -y update && apt-get install -y \
-    g++
+FROM gcc:latest
 
 VOLUME ["/usr/src/app"]
 WORKDIR /usr/src/app

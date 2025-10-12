@@ -1,4 +1,4 @@
-FROM python:3-alpine
+FROM python:latest
 
 VOLUME ["/usr/src/app"]
 WORKDIR /usr/src/app

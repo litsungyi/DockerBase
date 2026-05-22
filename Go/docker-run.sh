@@ -1,9 +1,7 @@
 #! /bin/bash
 
-docker run -it --rm \
+podman run -it --rm \
     --name golang-host \
-    -p 21200:80 \
-    -v "$PWD"/app:/usr/src/app \
-    -w /usr/src/app \
+    -p 8080:8080 \
     golang-base \
-    go run main.go
+    /bin/app

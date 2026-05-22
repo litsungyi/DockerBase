@@ -1,3 +1,3 @@
 #! /bin/bash
 
-docker build -t golang-base .
+podman build -t golang-base .

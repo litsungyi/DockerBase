@@ -1,7 +1,8 @@
 #! /bin/bash
 
-podman run -it --rm \
+docker run -it --rm \
     --name golang-host \
     -p 8080:8080 \
+    -v "$PWD"/log:/var/log \
     golang-base \
-    /bin/app
+    /root/app

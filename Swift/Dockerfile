@@ -1,6 +1,10 @@
 FROM swift:latest
 
-VOLUME ["/usr/src/app"]
-WORKDIR /usr/src/app
+WORKDIR /root/app
 
-CMD ["swift"]
+COPY app/ .
+
+# VOLUME ["/root/app"]
+# EXPOSE 80
+
+CMD ["swift" "run"]

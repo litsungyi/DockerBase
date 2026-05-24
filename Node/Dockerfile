@@ -1,8 +1,11 @@
 FROM node:latest
 
-VOLUME ["/usr/src/app"]
-WORKDIR /usr/src/app
+WORKDIR /root/app
 
+COPY app/ .
+RUN npm install
+
+# VOLUME ["/root/app"]
 EXPOSE 80
 
 CMD ["npm", "run", "start"]

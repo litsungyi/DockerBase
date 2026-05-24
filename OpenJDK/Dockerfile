@@ -1,10 +1,11 @@
 FROM openjdk:latest
 
-
-VOLUME ["/usr/src/app"]
-WORKDIR /usr/src/app
+WORKDIR /root/app
 
 COPY app/ .
 RUN javac Main.java
+
+# VOLUME ["/root/app"]
+# EXPOSE 80
 
 CMD ["java", "Main"]

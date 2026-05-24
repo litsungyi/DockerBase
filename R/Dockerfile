@@ -1,8 +1,10 @@
 FROM r-base:latest
 
-VOLUME ["/usr/src/app"]
-WORKDIR /usr/src/app
+WORKDIR /root/app
 
-EXPOSE 80
+COPY app/ .
+
+# VOLUME ["/root/app"]
+# EXPOSE 80
 
 CMD ["Rscript", "main.R"]

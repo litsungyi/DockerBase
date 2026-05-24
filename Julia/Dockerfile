@@ -1,6 +1,10 @@
 FROM julia:latest
 
-VOLUME ["/usr/src/app"]
-WORKDIR /usr/src/app
+WORKDIR /root/app
+
+COPY app/ .
+
+# VOLUME ["/root/app"]
+# EXPOSE 80
 
 CMD ["julia", "main.jl"]

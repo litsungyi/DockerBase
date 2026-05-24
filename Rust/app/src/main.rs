@@ -1,6 +1,6 @@
 use std::net::{TcpListener, TcpStream};
 
-fn handle_client(stream: TcpStream) {
+fn handle_client(_stream: TcpStream) {
     // ...
 }
 

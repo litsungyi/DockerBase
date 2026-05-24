@@ -1,6 +1,6 @@
 #! /bin/bash
 
-docker run -it --rm -d \
+docker run -it --rm \
     --name php-host \
     -p 21500:80 \
     -v "$PWD"/public_html:/var/www/html \

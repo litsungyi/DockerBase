@@ -1,13 +1,13 @@
 FROM ruby:latest
 
-VOLUME ["/tasks"]
-WORKDIR /tasks
+WORKDIR /root/tasks
 
 ENV LANG=C.UTF-8
 
-COPY Gemfile Gemfile.lock ./
+COPY tasks/ .
 RUN bundle install
 
-EXPOSE 3000
+# VOLUME ["/root/app"]
+# EXPOSE 3000
 
 CMD ["rake"]

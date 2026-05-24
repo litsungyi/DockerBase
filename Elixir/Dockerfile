@@ -1,6 +1,10 @@
 FROM elixir:latest
 
-VOLUME ["/usr/src/app"]
-WORKDIR /usr/src/app
+WORKDIR /root/app
+
+COPY app/ .
+
+VOLUME ["/root/app"]
+EXPOSE 80
 
 CMD ["elixir", "lib/main.ex"]

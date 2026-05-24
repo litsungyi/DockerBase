@@ -5,4 +5,4 @@ docker run -it --rm \
     -p 8080:8080 \
     -v "$PWD"/log:/var/log \
     golang-base \
-    /root/app
+    "$@"

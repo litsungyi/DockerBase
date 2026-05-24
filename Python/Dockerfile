@@ -1,11 +1,11 @@
 FROM python:latest
 
-VOLUME ["/usr/src/app"]
-WORKDIR /usr/src/app
+WORKDIR /root/app
 
-COPY . .
+COPY app/ .
 RUN pip install -r requirements.txt
 
-EXPOSE 80
+# VOLUME ["/root/app"]
+# EXPOSE 80
 
 CMD ["python", "main.py"]

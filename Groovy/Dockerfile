@@ -1,7 +1,11 @@
 FROM groovy:latest
 
-VOLUME ["/usr/src/app", "/home/groovy/.groovy/grapes"]
-WORKDIR /usr/src/app
+WORKDIR /home/groovy/app
+
+COPY app/ .
+
+# If need prser
+# VOLUME ["/home/groovy/.groovy/grapes"]
 
 EXPOSE 80
 
